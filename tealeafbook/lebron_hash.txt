@@ -1,0 +1,1 @@
+{:sport=>"basketball", :birthplace=>"Akron", :value=>"81 million", :endorsements=>[{"nike"=>"16million", "gatorade"=>"19million", "polo"=>"4million"}, [{"godaddy"=>"6million"}]], :position=>"small forward", :birthday=>"January 19, 1983", :rating=>"10"}
