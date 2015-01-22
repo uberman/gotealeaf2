@@ -5,3 +5,5 @@ practice/*
 *.log
 *.tgz
 *.zip
+*.tar
+*.gzip
