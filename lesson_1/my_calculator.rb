@@ -1,9 +1,7 @@
 require 'pry'
-# say("What is the first number of your operation?")
-# first_number = gets.chomp.to_f
-# say("What is the second number of your operation?")
-# second_number = gets.chomp.to_f
-
+#get the operation
+#get the two numbers
+#do calculation
 OPERATIONS = {
     "a" => "addition", 
     "s" => "subtraction", 
@@ -21,7 +19,7 @@ def valid_integer?(number)
 end
 
 def get_number 
-  say("What is the number?")
+  say("Number to calculate?")
   number = gets.chomp
   while !valid_integer?(number)
     # number.is_a? Numeric
@@ -47,14 +45,15 @@ def validate_operation
     say("Try a legit operation, please: a, s, m, d, o")
     operation = gets.chomp
   end
+  p "You chose #{OPERATIONS[operation]}"
   operation
 end
 
-operation = validate_operation
+calculation = validate_operation
 first_number = get_number
 second_number = get_number
 
-case operation 
+case calculation 
 when "a" 
   say("#{first_number} + #{second_number} = #{first_number + second_number}")
 when "s"
