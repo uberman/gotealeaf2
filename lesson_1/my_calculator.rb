@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 #get the operation
 #get the two numbers
 #do calculation
@@ -49,19 +49,25 @@ def get_operation
   operation
 end
 
-calculation = get_operation
-first_number = get_number
-second_number = get_number
+begin
+  calculation = get_operation
+  first_number = get_number
+  second_number = get_number
 
-case calculation 
-when "a" 
-  say("#{first_number} + #{second_number} = #{first_number + second_number}")
-when "s"
-  say("#{first_number} - #{second_number} = #{first_number - second_number}")
-when "m"
-  say("#{first_number} * #{second_number} = #{first_number * second_number}")
-when "d"
-  say("#{first_number} / #{second_number} = #{first_number / second_number}")
-when "o"
-  say("#{first_number} % #{second_number} = #{first_number % second_number}")
-end
+  case calculation 
+  when "a" 
+    say("#{first_number} + #{second_number} = #{first_number + second_number}")
+  when "s"
+    say("#{first_number} - #{second_number} = #{first_number - second_number}")
+  when "m"
+    say("#{first_number} * #{second_number} = #{first_number * second_number}")
+  when "d"
+    say("#{first_number} / #{second_number} = #{first_number / second_number}")
+  when "o"
+    say("#{first_number} % #{second_number} = #{first_number % second_number}")
+  end
+
+  sleep 1
+  say("Continue? y/n")
+  answer = gets.chomp
+end while answer.downcase != "n"
