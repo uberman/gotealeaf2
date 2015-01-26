@@ -33,7 +33,7 @@ def valid_operation?(operator)
   OPERATIONS.keys.include?(operator)
 end
 
-def validate_operation
+def get_operation
   say("What operation would you like to calculate? \n
   A)ddition \n
   S)ubtraction \n
@@ -49,7 +49,7 @@ def validate_operation
   operation
 end
 
-calculation = validate_operation
+calculation = get_operation
 first_number = get_number
 second_number = get_number
 
