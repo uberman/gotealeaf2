@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 #1 user picks rock, paper, or scissors
 #2 computer displays rock, paper, scissors randomly
 #3 evaluate winner/loser
@@ -32,7 +32,6 @@ begin
   player_weapon = WEAPONS[weapon]
   computer_weapon = WEAPONS.values.sample
   say("#{player_name} chooses #{player_weapon}, Computer chooses #{computer_weapon}")
-  battle_calculator(player_weapon,computer_weapon)
   battle_result = battle_calculator(player_weapon,computer_weapon)
 
   if battle_result == "tie"
